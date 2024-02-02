@@ -3,11 +3,32 @@
   font-family: "Lato", sans-serif;
 }
 
-img {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   max-width: 100%;
 }
 
-body {
+img {
+  max-width: 100%;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+.flex.center {
+  justify-content: center;
+}
+.flex.spaceAround {
+  justify-content: space-around;
+}
+.flex.column {
+  flex-direction: column;
+}
+
+body, html {
   margin: 0;
 }
 
@@ -21,6 +42,7 @@ header {
   align-self: center;
   align-items: center;
   box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
+  z-index: 1000;
 }
 header .logo {
   width: 100px;
@@ -56,4 +78,59 @@ header ul:after {
   margin: 10px 0;
   bottom: -3px;
   position: absolute;
+}
+
+section.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+section.banner::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  background-image: url("../../public/img/banner/bordasLateraisAzuis.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+section.banner::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  background-image: url("../../public/img/banner/caminhoVerde.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+section.banner .busCut {
+  position: relative;
+  height: 390.85px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.35));
+}
+section.banner .flexBannerEtco {
+  align-items: center;
+}
+section.banner .flexBannerEtco h1 {
+  font-size: 75px;
+  font-weight: 900;
+  text-align: justify;
+}
+section.banner .flexBannerEtco h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: justify;
+  width: 410px;
 }
