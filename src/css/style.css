@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
-  font-family: "Lato", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 * {
@@ -117,20 +117,34 @@ section.banner::after {
 }
 section.banner .busCut {
   position: relative;
-  height: 390.85px;
+  height: 410.85px;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.35));
 }
 section.banner .flexBannerEtco {
+  gap: 120px;
   align-items: center;
 }
 section.banner .flexBannerEtco h1 {
   font-size: 75px;
-  font-weight: 900;
+  font-weight: 700;
   text-align: justify;
+  margin: 0;
+  line-height: 48px;
 }
 section.banner .flexBannerEtco h2 {
   font-size: 30px;
   font-weight: 600;
   text-align: justify;
   width: 410px;
+  margin-left: 25px;
+}
+section.banner .flexBannerEtco button {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  width: 237px;
+}
+section.banner .flexBannerEtco .sideRBanner .textosBanner {
+  gap: 9px;
 }

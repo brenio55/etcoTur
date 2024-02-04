@@ -10,7 +10,7 @@ function Banner(){
                         <img className="busCut" src="/img/banner/onibusCut.png" alt="" />
                     </div>
                     <div className="sideRBanner">
-                        <div className="flex column">
+                        <div className="flex column textosBanner">
                             <h1>Etco Tur</h1>
                             <h2>27 Anos Conectando Sonhos, Destinhos e Viagens Incríveis</h2>
 
