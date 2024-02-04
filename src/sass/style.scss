@@ -143,6 +143,7 @@ section.banner{
     .flexBannerEtco{
         gap: 120px;
         align-items: center;
+        $correctingMarginSpace: 4px;
 
         h1{
             font-size: 75px;
@@ -152,24 +153,28 @@ section.banner{
             line-height: 48px;
         }
         h2{
-            font-size: 30px;
-            font-weight: 600;
+            font-size: 23px;
+            font-weight: 300;
             text-align: justify;
-            width: 410px;
-            margin-left: 25px;
+            width: 315px;
+            margin-left: $correctingMarginSpace;
         }
 
         button{
             padding: 10px;
-            border-radius: 10px;
-            font-weight: 700;
+            border-radius: 20px;
+            font-weight: 600;
             font-size: 17px;
-            width: 237px;
+            width: 168px;
+            border: none;
+            background-color: #526da0;
+            color: white;
+            margin-left: $correctingMarginSpace;
         }
 
         .sideRBanner{
             .textosBanner{
-                gap: 9px;
+                gap: 17px;
             }
         }
     }
