@@ -2,14 +2,14 @@ import { useState } from 'react'
 import './css/style.css'
 import Header from './components/Header'
 import Banner from './pages/Banner'
+import Services from './pages/Services'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Header></Header>
       <Banner></Banner>
+      <Services></Services>
     </>
   )
 }

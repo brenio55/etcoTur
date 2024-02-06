@@ -14,7 +14,7 @@ function Banner(){
                             <h1>Etco Tur</h1>
                             <h2>27 Anos Conectando Sonhos, Destinhos e Viagens Incríveis</h2>
 
-                            <button>Descobrir</button>
+                            <button className="halfDarkBlueBackground rounded">Descobrir</button>
                         </div>
                     </div>
                 </div>

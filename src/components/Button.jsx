@@ -1,17 +1,12 @@
-function Button (type, value) {
-    let types  
+function Button (props) {
+    const type = props.type;
+    const value = props.value;
 
-    if (type === "whiteBackground"){
+
+    if (type === "whiteBackground" || type === "halfDarkBlueBackground") {
         return (
             <>
-                <button className=""></button>
-            </>
-        )
-    }
-    if (type === "greenBackground"){
-        return (
-            <>
-                <button className=""></button>
+                <button className={type}>{value}</button>
             </>
         )
     }

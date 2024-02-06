@@ -32,6 +32,30 @@ body, html {
   margin: 0;
 }
 
+button.whiteBackground {
+  padding: 10px;
+  border-radius: 6.88px;
+  font-weight: 600;
+  font-size: 17px;
+  width: 168px;
+  border: none;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+button.halfDarkBlueBackground {
+  padding: 10px;
+  border-radius: 6.88px;
+  font-weight: 600;
+  font-size: 17px;
+  width: 168px;
+  border: none;
+  background-color: #526da0;
+  color: rgb(255, 255, 255);
+}
+button.halfDarkBlueBackground.rounded {
+  border-radius: 20px;
+}
+
 header {
   display: flex;
   width: 100%;
@@ -139,16 +163,18 @@ section.banner .flexBannerEtco h2 {
   margin-left: 4px;
 }
 section.banner .flexBannerEtco button {
-  padding: 10px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 17px;
-  width: 168px;
-  border: none;
-  background-color: #526da0;
-  color: white;
   margin-left: 4px;
 }
 section.banner .flexBannerEtco .sideRBanner .textosBanner {
   gap: 17px;
+}
+
+section.services h2:nth-of-type(1) {
+  text-align: center;
+  font-size: 62px;
+  margin-top: -15px;
+}
+section.services img.bordaSupServices {
+  margin-top: -25px;
+  width: 100%;
 }

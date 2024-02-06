@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+$h1Size : 75px;
+$h2Size : 62px;
+$h2SuperLightSize: 23px;
+
 :root{
     font-family: "Outfit", sans-serif;
 }
@@ -32,6 +36,32 @@ img{
 
 body, html{
     margin: 0;
+}
+
+button{
+    &.whiteBackground{
+            padding: 10px;
+            border-radius: 6.88px;
+            font-weight: 600;
+            font-size: 17px;
+            width: 168px;
+            border: none;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);   
+    }
+
+    &.halfDarkBlueBackground{
+            padding: 10px;
+            border-radius: 6.88px;
+            font-weight: 600;
+            font-size: 17px;
+            width: 168px;
+            border: none;
+            background-color: #526da0;
+            color: rgb(255, 255, 255);
+
+            &.rounded{ border-radius: 20px; }
+    }
 }
 
 header {
@@ -146,14 +176,14 @@ section.banner{
         $correctingMarginSpace: 4px;
 
         h1{
-            font-size: 75px;
+            font-size: $h1Size;
             font-weight: 700;
             text-align: justify;
             margin: 0;
             line-height: 48px;
         }
         h2{
-            font-size: 23px;
+            font-size: $h2SuperLightSize;
             font-weight: 300;
             text-align: justify;
             width: 315px;
@@ -161,14 +191,6 @@ section.banner{
         }
 
         button{
-            padding: 10px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 17px;
-            width: 168px;
-            border: none;
-            background-color: #526da0;
-            color: white;
             margin-left: $correctingMarginSpace;
         }
 
@@ -178,5 +200,20 @@ section.banner{
             }
         }
     }
+
 }
 
+
+section.services{
+    h2:nth-of-type(1){
+        text-align: center;
+        font-size: 62px;
+        margin-top: -15px;
+    }       
+
+    img.bordaSupServices{
+        margin-top: -25px;
+        width: 100%;
+        
+    }
+}
