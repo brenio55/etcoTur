@@ -33,6 +33,17 @@ body, html {
   margin: 0;
 }
 
+.buttonWhiteBackground {
+  padding: 10px;
+  border-radius: 6.88px;
+  font-weight: 600;
+  font-size: 17px;
+  width: 168px;
+  border: none;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
 button.whiteBackground {
   padding: 10px;
   border-radius: 6.88px;
@@ -226,4 +237,19 @@ section.services article.serviceComponent button {
 section.services img.montanhaServices {
   margin-top: 9px;
   width: 100%;
+}
+
+section.contact {
+  background-image: url("img/contact/contactBanner.png");
+  display: block;
+  background-size: 100%;
+  min-height: 1236px;
+  background-repeat: no-repeat;
+  margin-top: -4px;
+  color: white;
+  text-align: center;
+  padding-top: 75px;
+}
+section.contact h2 {
+  font-size: 62px;
 }
