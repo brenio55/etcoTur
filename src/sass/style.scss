@@ -60,6 +60,11 @@ button{
         @include whiteBackground;
     }
 
+    &.GreenBackground{
+        @include whiteBackground;
+        background-color: #C8FF1C;
+    }
+
     &.halfDarkBlueBackground{
             padding: 10px;
             border-radius: 6.88px;
@@ -291,7 +296,7 @@ section.contact{
     background-image: url("/img/contact/contactBanner.png");
     display: block;
     background-size: 100%;
-    min-height: 1236px;
+    min-height: 542px;
     background-repeat: no-repeat;
     margin-top: -4px;
     color: white;
@@ -368,4 +373,8 @@ section.contact{
             }
         }
     }
+}
+
+section.aboutUs{
+    margin-top: -4px;
 }

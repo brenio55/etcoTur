@@ -1,9 +1,9 @@
-import { useState } from 'react'
 import './css/style.css'
 import Header from './components/Header'
 import Banner from './pages/Banner'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
+import AboutUs from './pages/AboutUs'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Banner></Banner>
       <Services></Services>
       <Contact></Contact>
+      <AboutUs></AboutUs>
     </>
   )
 }

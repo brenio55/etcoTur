@@ -54,6 +54,17 @@ button.whiteBackground {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
+button.GreenBackground {
+  padding: 10px;
+  border-radius: 6.88px;
+  font-weight: 600;
+  font-size: 17px;
+  width: 168px;
+  border: none;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  background-color: #C8FF1C;
+}
 button.halfDarkBlueBackground {
   padding: 10px;
   border-radius: 6.88px;
@@ -254,7 +265,7 @@ section.contact {
   background-image: url("/img/contact/contactBanner.png");
   display: block;
   background-size: 100%;
-  min-height: 1236px;
+  min-height: 542px;
   background-repeat: no-repeat;
   margin-top: -4px;
   color: white;
@@ -320,4 +331,8 @@ section.contact .contactR div.flex {
 }
 section.contact .contactR div.flex input {
   margin: 0;
+}
+
+section.aboutUs {
+  margin-top: -4px;
 }
