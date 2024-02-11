@@ -1,4 +1,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home3/etcotu90/public_html/
-    - /bin/cp dist/* $DEPLOYPATH
+    - /bin/cp /home3/etcotu90/repositories/etcoTur/* $DEPLOYPATH
