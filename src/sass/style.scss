@@ -74,6 +74,10 @@ button{
     }
 }
 
+input, textarea {
+    @include whiteBackground;
+}
+
 header {
     
     display: flex;
@@ -294,7 +298,74 @@ section.contact{
     text-align: center;
     padding-top: 75px;
 
+    div.flex.central{
+        margin-top: 25px;
+        align-items: center;
+    }
+
     h2{
         font-size: $h2Size;
+    }
+
+    .contactL{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h3 {    
+            width: 250px;
+            font-weight: 400;
+        }
+
+        div.redesSociais{
+            justify-content: space-around;
+            text-align: center;
+
+            .redeSocialContact{
+                display: flex;
+                justify-content: center;
+                background-color: rgba( 86, 162, 213, 0.2);
+                width: fit-content;
+                height: fit-content;
+                padding: 9px;       
+                border-radius: 18px;
+            }
+
+            img{
+                width: 37px;
+            }
+        }
+    }
+
+    .contactR{
+        width: 400px;
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        input, textarea {
+            font-weight: 400;
+            width: 100%;
+        }
+
+        .enviarContactButton{
+            font-weight: 600;
+        }
+
+        div.flex{
+            width: 100%;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+
+            input {
+                margin: 0;
+            }
+        }
     }
 }

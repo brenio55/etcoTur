@@ -68,6 +68,17 @@ button.halfDarkBlueBackground.rounded {
   border-radius: 20px;
 }
 
+input, textarea {
+  padding: 10px;
+  border-radius: 6.88px;
+  font-weight: 600;
+  font-size: 17px;
+  width: 168px;
+  border: none;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
 header {
   display: flex;
   width: 100%;
@@ -250,6 +261,63 @@ section.contact {
   text-align: center;
   padding-top: 75px;
 }
+section.contact div.flex.central {
+  margin-top: 25px;
+  align-items: center;
+}
 section.contact h2 {
   font-size: 62px;
+}
+section.contact .contactL {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+section.contact .contactL h3 {
+  width: 250px;
+  font-weight: 400;
+}
+section.contact .contactL div.redesSociais {
+  justify-content: space-around;
+  text-align: center;
+}
+section.contact .contactL div.redesSociais .redeSocialContact {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(86, 162, 213, 0.2);
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 9px;
+  border-radius: 18px;
+}
+section.contact .contactL div.redesSociais img {
+  width: 37px;
+}
+section.contact .contactR {
+  width: 400px;
+}
+section.contact .contactR form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+section.contact .contactR input, section.contact .contactR textarea {
+  font-weight: 400;
+  width: 100%;
+}
+section.contact .contactR .enviarContactButton {
+  font-weight: 600;
+}
+section.contact .contactR div.flex {
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+section.contact .contactR div.flex input {
+  margin: 0;
 }
