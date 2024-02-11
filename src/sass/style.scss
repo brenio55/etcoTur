@@ -157,7 +157,7 @@ section.banner{
         position: absolute;
         top: 120px;
         left: 0;
-        background-image: url('../../public/img/banner/bordasLateraisAzuis.svg');
+        background-image: url('/img/banner/bordasLateraisAzuis.svg');
         background-size: 100%;
         background-repeat: no-repeat;
         z-index: -1;
@@ -171,7 +171,7 @@ section.banner{
         position: absolute;
         top: 120px;
         left: 0;
-        background-image: url('../../public/img/banner/caminhoVerde.png');
+        background-image: url('/img/banner/caminhoVerde.png');
         background-size: 100%;
         background-repeat: no-repeat;
         z-index: -1;
@@ -243,7 +243,7 @@ section.services{
             width: 100%;
             height: 100%;
             position: absolute;
-            background-image: url('../../public/img/services/poligonoServiços.svg');
+            background-image: url('/img/services/poligonoServiços.svg');
             background-repeat: repeat;
             z-index: -1;
             top: -64px;
@@ -288,7 +288,7 @@ section.services{
 }
 
 section.contact{
-    background-image: url("img/contact/contactBanner.png");
+    background-image: url("/img/contact/contactBanner.png");
     display: block;
     background-size: 100%;
     min-height: 1236px;
