@@ -44,7 +44,7 @@ function Services () {
                 ></Service>
             </div>
 
-            <img src="/img/services/montanhasServiços.png" alt="" srcset="" className="montanhaServices"/>
+            <img src="/img/services/montanhasServiços.png" alt="" className="montanhaServices"/>
         </section>            
         </>
     )

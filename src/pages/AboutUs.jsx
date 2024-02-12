@@ -13,6 +13,8 @@ function AboutUs () {
                         <h3>a Etco Tur</h3>                            
                         <p> Fundada em 1997 na cidade de Ouro Fino por Sr. Pedro, iniciou sua jornada com apenas dois ônibus, concentrando-se em serviços de fretamentos turísticos. </p>
 
+                        <br></br>
+
                         <p>A história toma um rumo em 2003, no Dia de Nossa Senhora das Graças, quando Sr. Paulo e Enio Pirani, pai e filho, decidem adquirir metade dessa pequena empresa com a esperança de tornarem-se motoristas e explorarem o mundo das excursões.</p>
                     </div>
                 </div>

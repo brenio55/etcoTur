@@ -278,6 +278,7 @@ section.contact div.flex.central {
 }
 section.contact h2 {
   font-size: 62px;
+  margin-top: 15px;
 }
 section.contact .contactL {
   display: flex;
@@ -334,5 +335,27 @@ section.contact .contactR div.flex input {
 }
 
 section.aboutUs {
+  text-align: center;
   margin-top: -4px;
+}
+section.aboutUs h2 {
+  font-size: 62px;
+  margin-top: 15px;
+  margin-bottom: 27px;
+}
+section.aboutUs h3 {
+  font-size: 25px;
+}
+section.aboutUs .aboutUsL, section.aboutUs .aboutUsR {
+  width: 500px;
+}
+section.aboutUs .aboutUsR {
+  text-align: justify;
+}
+section.aboutUs .aboutUsR h3 {
+  text-align: center;
+}
+
+footer {
+  position: relative;
 }

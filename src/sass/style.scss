@@ -310,6 +310,7 @@ section.contact{
 
     h2{
         font-size: $h2Size;
+        margin-top: 15px;
     }
 
     .contactL{
@@ -376,5 +377,31 @@ section.contact{
 }
 
 section.aboutUs{
+    text-align: center;
     margin-top: -4px;
+    h2{
+        font-size: $h2Size;
+        margin-top: 15px;
+        margin-bottom: 27px;
+    }
+    h3{
+        font-size: 25px;
+    }
+
+    .aboutUsL, .aboutUsR{
+        width: 500px;
+    }
+
+    .aboutUsR{
+        h3{
+            text-align: center;
+        }
+
+        text-align: justify;
+    }
+}
+
+footer{
+    position: relative;
+    
 }
