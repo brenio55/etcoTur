@@ -346,8 +346,43 @@ section.aboutUs h2 {
 section.aboutUs h3 {
   font-size: 25px;
 }
+section.aboutUs .central {
+  margin-top: 60px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: auto;
+  background-image: url("/img/aboutUs/lineBehind.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 section.aboutUs .aboutUsL, section.aboutUs .aboutUsR {
   width: 500px;
+}
+section.aboutUs .aboutUsL {
+  position: relative;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+section.aboutUs .aboutUsL:before {
+  content: "";
+  background-image: url("/img/aboutUs/bolinhasBehind.png");
+  background-position: center;
+  background-size: 99%;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 120%;
+  height: 120%;
+  z-index: -1;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section.aboutUs .aboutUsL img {
+  width: 493px;
 }
 section.aboutUs .aboutUsR {
   text-align: justify;

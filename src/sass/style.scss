@@ -388,8 +388,45 @@ section.aboutUs{
         font-size: 25px;
     }
 
+    .central{
+        margin-top: 60px;
+        height: fit-content;
+        width: auto;
+        background-image: url('/img/aboutUs/lineBehind.png');
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
     .aboutUsL, .aboutUsR{
         width: 500px;
+    }
+
+    .aboutUsL{
+        position: relative;
+        min-width: fit-content;
+        min-height: fit-content;
+
+        &:before{
+            content: "";
+            background-image: url('/img/aboutUs/bolinhasBehind.png');
+            background-position: center;
+            background-size: 99%;
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 120%;
+            height: 120%;
+            z-index: -1;
+            top: 47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+
+        img{
+            width: 493px;
+        }
     }
 
     .aboutUsR{
