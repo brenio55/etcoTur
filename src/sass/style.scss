@@ -381,6 +381,10 @@ section.aboutUs{
     position: relative;
     text-align: center;
     margin-top: -4px;
+
+    .topWaveAboutUs{
+        width: 100%;
+    }
     h2{
         font-size: $h2Size;
         margin-top: 15px;

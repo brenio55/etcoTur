@@ -340,6 +340,9 @@ section.aboutUs {
   text-align: center;
   margin-top: -4px;
 }
+section.aboutUs .topWaveAboutUs {
+  width: 100%;
+}
 section.aboutUs h2 {
   font-size: 62px;
   margin-top: 15px;
