@@ -347,7 +347,9 @@ section.aboutUs h3 {
   font-size: 25px;
 }
 section.aboutUs .central {
+  align-items: center;
   margin-top: 60px;
+  margin-bottom: 60px;
   height: -moz-fit-content;
   height: fit-content;
   width: auto;
@@ -388,9 +390,44 @@ section.aboutUs .aboutUsR {
   text-align: justify;
 }
 section.aboutUs .aboutUsR h3 {
+  margin-top: -30px;
   text-align: center;
+}
+section.aboutUs .aboutUsR p {
+  line-height: 30px;
+}
+section.aboutUs .porqueNosEscolher {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+section.aboutUs .flex.vantagens {
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+section.aboutUs .flex.vantagens .vantagem h4:nth-of-type(1) {
+  font-weight: 900;
+}
+section.aboutUs .flex.vantagens .vantagem p {
+  font-weight: 600;
+}
+section.aboutUs .flex.vantagens .vantagem h3, section.aboutUs .flex.vantagens .vantagem h4 {
+  color: #0991CC;
+  text-align: center;
+}
+section.aboutUs .flex.vantagens .vantagem h4, section.aboutUs .flex.vantagens .vantagem p {
+  width: 260px;
+}
+section.aboutUs .flex.vantagens .vantagem h4 {
+  font-size: 25px;
+}
+section.aboutUs button {
+  margin-bottom: 60px;
 }
 
 footer {
+  display: flex;
   position: relative;
+  width: 100%;
+  justify-content: space-evenly;
 }

@@ -388,8 +388,11 @@ section.aboutUs{
         font-size: 25px;
     }
 
+    
     .central{
+        align-items: center;
         margin-top: 60px;
+        margin-bottom: 60px;
         height: fit-content;
         width: auto;
         background-image: url('/img/aboutUs/lineBehind.png');
@@ -431,14 +434,60 @@ section.aboutUs{
 
     .aboutUsR{
         h3{
+            margin-top: -30px;
             text-align: center;
+        }
+
+        p {
+            line-height: 30px;
         }
 
         text-align: justify;
     }
+
+    .porqueNosEscolher{
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 60px;
+    }
+
+    .flex.vantagens{
+        justify-content: space-evenly;
+
+        .vantagem{
+            h4:nth-of-type(1){
+                font-weight: 900;
+            }
+
+            p{
+                font-weight: 600;
+            }
+
+            h3, h4{
+                color: #0991CC;
+                text-align: center;
+            }
+
+            h4, p{
+                width: 260px;
+            }
+
+            h4{
+                font-size: 25px;
+            }
+        }
+
+        margin-bottom: 60px;
+    }
+
+    button{
+        margin-bottom: 60px;
+    }
 }
 
 footer{
+    display: flex;
     position: relative;
-    
+    width: 100%;
+    justify-content: space-evenly;
 }

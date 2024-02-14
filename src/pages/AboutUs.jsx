@@ -19,7 +19,7 @@ function AboutUs () {
                     </div>
                 </div>
 
-                <h3>Por que nos escolher?</h3>
+                <h3 className="porqueNosEscolher">Por que nos escolher?</h3>
                 <div className="flex vantagens">
                     <div className="vantagem">
                         <h4>12+</h4>
