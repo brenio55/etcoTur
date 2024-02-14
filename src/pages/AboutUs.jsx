@@ -41,6 +41,10 @@ function AboutUs () {
                 </div>
 
                 <button className="GreenBackground">Fale Conosco</button>
+                <br></br>
+
+                <img className="montanhaAboutUsFinal" src="\img\aboutUs\montanhasSobreNos.png" alt="" />
+                
             </section>
         </>
     )

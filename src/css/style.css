@@ -335,6 +335,8 @@ section.contact .contactR div.flex input {
 }
 
 section.aboutUs {
+  width: 100%;
+  position: relative;
   text-align: center;
   margin-top: -4px;
 }
@@ -403,7 +405,7 @@ section.aboutUs .porqueNosEscolher {
 }
 section.aboutUs .flex.vantagens {
   justify-content: space-evenly;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 section.aboutUs .flex.vantagens .vantagem h4:nth-of-type(1) {
   font-weight: 900;
@@ -422,12 +424,48 @@ section.aboutUs .flex.vantagens .vantagem h4 {
   font-size: 25px;
 }
 section.aboutUs button {
-  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section.aboutUs .montanhaAboutUsFinal {
+  width: 100%;
 }
 
 footer {
   display: flex;
   position: relative;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  padding: 25px 0 45px 0;
+}
+footer .footerItems {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  align-items: center;
+}
+footer .footerItems h5 {
+  font-weight: 700;
+  font-size: 18px;
+}
+footer .footerItems .menuFooter, footer .footerItems .contactFooter, footer .footerItems .socialFooter {
+  flex-direction: column;
+  text-align: center;
+}
+footer .footerItems .menuFooter li, footer .footerItems .contactFooter li, footer .footerItems .socialFooter li {
+  list-style: none;
+}
+footer .footerItems .redesSociais.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+}
+footer .footerItems .redesSociais.footer .redeSocialContact {
+  width: 26px;
+  height: 26px;
+}
+footer .logo {
+  width: 100px;
+  height: 100px;
 }

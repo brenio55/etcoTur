@@ -377,6 +377,8 @@ section.contact{
 }
 
 section.aboutUs{
+    width: 100%;
+    position: relative;
     text-align: center;
     margin-top: -4px;
     h2{
@@ -477,11 +479,16 @@ section.aboutUs{
             }
         }
 
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 
     button{
-        margin-bottom: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .montanhaAboutUsFinal{
+        width: 100%;
     }
 }
 
@@ -489,5 +496,45 @@ footer{
     display: flex;
     position: relative;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
+
+    .footerItems{
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+        align-items: center;
+
+        h5{
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .menuFooter, .contactFooter, .socialFooter{
+            flex-direction: column;
+            text-align: center;
+
+            li{
+                list-style: none;
+            }
+        }
+
+        .redesSociais.footer{
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            justify-content: center;
+
+            .redeSocialContact{
+                width: 26px;
+                height: 26px;
+            }    
+        }
+        
+    }
+
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    padding: 25px 0 45px 0;
 }

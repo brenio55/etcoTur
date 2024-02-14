@@ -2,9 +2,9 @@ function Footer() {
     return (
         <>
             <footer>
-                <img className="footerLogo" src="" alt="" />
-                <div className="flex">
-                    <div className="flex">
+                <img src="img/logo.png" alt="logo" className="logo"/>
+                <div className="flex footerItems">
+                    <div className="flex menuFooter">
                         <h5>Menu</h5>
                         <ul>
                             <li>Início</li>
@@ -15,7 +15,7 @@ function Footer() {
                         </ul>
                     </div>
 
-                    <div className="flex">
+                    <div className="flex contactFooter">
                         <h5>Contato</h5>
                         <ul>
                             <li>etcoaguas@hotmail.com</li>
@@ -23,18 +23,18 @@ function Footer() {
                         </ul>
                     </div>
 
-                    <div className="flex">
+                    <div className="flex socialFooter">
                         <h5>Redes Sociais</h5>
                         <div className="flex redesSociais footer">
                             <div className="redeSocialContact footer">
                                 <img src="/img/contact/whatsapp.png" alt="whatsapp icon" />
                             </div>
                             <div className="redeSocialContact">
-                                <img src="/img/contact/instagram.png" alt="instagram icon" />
-                            </div>
-                            <div className="redeSocialContact">
                                 <img src="/img/contact/linkedin.png" alt="linkedin icon" />
                             </div>
+                            <div className="redeSocialContact">
+                                <img src="/img/contact/instagram.png" alt="instagram icon" />
+                            </div>                            
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,8 @@ function Footer() {
                     bottom: "0px",
                     left: "50%",
                     transform: "translateX(-50%)",
-                    marginBottom: "5px"
+                    marginBottom: "5px",
+                    fontSize: "13px"
                     }}><a href="https://www.instagram.com/divsec.dev/">Desenvolvido por &lt;DiVSeC&gt; </a></p>
             </footer>
         </>
