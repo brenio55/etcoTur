@@ -38,6 +38,7 @@ img{
 
 body, html{
     margin: 0;
+    height: 100%;
 }
 
 @mixin whiteBackground{
@@ -142,17 +143,23 @@ header {
     }
 }
 
+.afterHeader{
+    display: block;
+    height: 120px;
+}
+
 section.banner{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: calc(100vh + 120px);
-    
+    min-height: calc(100vh);    
+
     position: relative;
 
-    // 
+    
 
     &::before{
         content: '';
@@ -160,11 +167,12 @@ section.banner{
         width: 100%;
         height: 100vh;
         position: absolute;
-        top: 120px;
+        // top: 120px;
         left: 0;
         background-image: url('/img/banner/bordasLateraisAzuis.svg');
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
         z-index: -1;
     }
 
@@ -174,11 +182,25 @@ section.banner{
         width: 100%;
         height: 100vh;
         position: absolute;
-        top: 120px;
+        // top: 120px;
         left: 0;
         background-image: url('/img/banner/caminhoVerde.png');
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .bordasAzuis{
+        position: absolute;
+        // top: $topHeader;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .caminhoVerde{
+        position: absolute;
+        // top: $topHeader;
+        width: 100%;
         z-index: -1;
     }
 

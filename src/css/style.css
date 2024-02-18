@@ -31,6 +31,7 @@ img {
 
 body, html {
   margin: 0;
+  height: 100%;
 }
 
 .buttonWhiteBackground {
@@ -138,13 +139,18 @@ header ul:after {
   position: absolute;
 }
 
+.afterHeader {
+  display: block;
+  height: 120px;
+}
+
 section.banner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: calc(100vh + 120px);
+  min-height: 100vh;
   position: relative;
 }
 section.banner::before {
@@ -153,11 +159,11 @@ section.banner::before {
   width: 100%;
   height: 100vh;
   position: absolute;
-  top: 120px;
   left: 0;
   background-image: url("/img/banner/bordasLateraisAzuis.svg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   z-index: -1;
 }
 section.banner::after {
@@ -166,11 +172,20 @@ section.banner::after {
   width: 100%;
   height: 100vh;
   position: absolute;
-  top: 120px;
   left: 0;
   background-image: url("/img/banner/caminhoVerde.png");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  z-index: -1;
+}
+section.banner .bordasAzuis {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+section.banner .caminhoVerde {
+  position: absolute;
+  width: 100%;
   z-index: -1;
 }
 section.banner .busCut {

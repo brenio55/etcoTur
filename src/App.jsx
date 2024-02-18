@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <Header></Header>
+        <div className="afterHeader"></div>
         <Banner></Banner>
         <Services></Services>
         <Contact></Contact>
