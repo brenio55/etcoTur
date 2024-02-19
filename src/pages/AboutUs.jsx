@@ -1,7 +1,7 @@
 function AboutUs () {
     return (
         <>
-            <section className="aboutUs">
+            <section className="aboutUs" id="aboutUs">
 
             <img className="topWaveAboutUs" src="/img/aboutUs/topWaveAboutUs.png" alt="" />
 
@@ -42,7 +42,7 @@ function AboutUs () {
                     </div>
                 </div>
 
-                <button className="GreenBackground">Fale Conosco</button>
+                <a href="#contact"><button className="GreenBackground">Fale Conosco</button></a>
                 <br></br>
 
                 

@@ -1,3 +1,5 @@
+import UlMenu from "./UlMenu"
+
 function Header(){
     return (
         <>
@@ -6,13 +8,7 @@ function Header(){
                     <img src="img/logo.png" alt="logo" />
                 </div>
                 <div className="menu">
-                    <ul>
-                        <li>INÍCIO</li>
-                        <li>SERVIÇOS</li>
-                        <li>CONTATO</li>
-                        <li>SOBRE NÓS</li>
-                        <li>TRABALHE CONOSCO</li>
-                    </ul>
+                    <UlMenu></UlMenu>
                 </div>
             </header>
         </>

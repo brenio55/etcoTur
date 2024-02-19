@@ -6,6 +6,8 @@ function Service (props) {
     let imgSrc = props.imgSrc;
     let buttonType = props.buttonType;
     let buttonValue = props.buttonValue;
+    let buttonLink = props.buttonLink;
+    // console.log(buttonLink)
 
     return (
         <>
@@ -15,9 +17,9 @@ function Service (props) {
 
                     <h5>{description}</h5>
 
-                    <Button type={buttonType} 
+                    <a href={buttonLink}><Button type={buttonType} 
                         value={buttonValue}
-                    />
+                    /></a>
             </article>
         </>
     )

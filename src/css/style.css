@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   font-family: "Outfit", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -32,6 +40,22 @@ img {
 body, html {
   margin: 0;
   height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+#services, #aboutUs {
+  scroll-margin-top: 120px;
+}
+
+#contact {
+  scroll-margin-top: 250px;
 }
 
 .buttonWhiteBackground {
@@ -461,6 +485,9 @@ footer {
   width: 100%;
   justify-content: space-around;
   padding: 25px 0 45px 0;
+}
+footer .UlMenu li {
+  text-transform: lowercase;
 }
 footer .footerItems {
   display: flex;

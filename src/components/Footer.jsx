@@ -1,27 +1,23 @@
+import UlMenu from "./UlMenu"
+
 function Footer() {
     return (
         <>
             <img className="footerTopWave" src="/img/topWaveFooter.png" alt="" />
 
             <footer>
-                <img src="img/logo.png" alt="logo" className="logo"/>
+                <a href="#banner"><img src="img/logo.png" alt="logo" className="logo"/></a>
                 <div className="flex footerItems">
                     <div className="flex menuFooter">
                         <h5>Menu</h5>
-                        <ul>
-                            <li>Início</li>
-                            <li>Serviços</li>
-                            <li>Contato</li>
-                            <li>Sobre</li>
-                            <li>Trabalhe Conosco</li>
-                        </ul>
+                        <UlMenu></UlMenu>
                     </div>
 
                     <div className="flex contactFooter">
                         <h5>Contato</h5>
                         <ul>
-                            <li>etcoaguas@hotmail.com</li>
-                            <li>(19) 3824-3222</li>
+                            <a href="mailto:etcoaguas@hotmail.com"><li>etcoaguas@hotmail.com</li></a>
+                            <a href="tel:(19)3824-3222"><li>(19) 3824-3222</li></a>
                         </ul>
                     </div>
 
@@ -29,13 +25,13 @@ function Footer() {
                         <h5>Redes Sociais</h5>
                         <div className="flex redesSociais footer">
                             <div className="redeSocialContact footer">
-                                <img src="/img/contact/whatsapp.png" alt="whatsapp icon" />
+                                <a href="https://wa.me/551938243222" target="_blank"><img src="/img/contact/whatsapp.png" alt="whatsapp icon" /></a>
                             </div>
                             <div className="redeSocialContact">
-                                <img src="/img/contact/linkedin.png" alt="linkedin icon" />
+                                <a href="https://www.linkedin.com/company/etco-tur/?originalSubdomain=br" target="_blank"><img src="/img/contact/linkedin.png" alt="linkedin icon" /></a>
                             </div>
                             <div className="redeSocialContact">
-                                <img src="/img/contact/instagram.png" alt="instagram icon" />
+                                <a href="https://www.instagram.com/etcoturoficial/" target="_blank"><img src="/img/contact/instagram.png" alt="instagram icon" /></a>
                             </div>                            
                         </div>
                     </div>
@@ -49,7 +45,7 @@ function Footer() {
                     transform: "translateX(-50%)",
                     marginBottom: "5px",
                     fontSize: "13px"
-                    }}><a href="https://www.instagram.com/divsec.dev/">Desenvolvido por &lt;DiVSeC&gt; </a></p>
+                    }}><a href="https://www.instagram.com/divsec.dev/" target="_blank">Desenvolvido por &lt;DiVSeC&gt; </a></p>
             </footer>
         </>
     )

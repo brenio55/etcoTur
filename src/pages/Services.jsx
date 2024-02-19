@@ -4,7 +4,7 @@ import Service from '../components/Service';
 function Services () {
     return (
         <>
-        <section className="services">
+        <section className="services" id="services">
             <img className="bordaSupServices" src="/img/services/bordaSupServiços.png" />
             <h2>Serviços</h2>
             <div className="flex center servicesDiv">
@@ -13,7 +13,8 @@ function Services () {
                     description="Translados Aeroporto, Faculdades, Transporte Escolar, Transporte de Funcionários, dentre outros."
                     imgSrc="/img/services/transporteDePassageiros.png"
                     buttonType="whiteBackground"
-                    buttonValue="Saiba Mais"                
+                    buttonValue="Saiba Mais"    
+                    buttonLink="#contact"           
                 ></Service>
                 <Service
                     title="Excursões"
@@ -22,7 +23,8 @@ function Services () {
                     não raro orientado por um guia."
                     imgSrc="/img/services/excursoes.png"
                     buttonType="whiteBackground"
-                    buttonValue="Saiba Mais"                
+                    buttonValue="Saiba Mais"    
+                    buttonLink="#contact"                       
                 ></Service>
                 <Service
                     title="Fretamentos"
@@ -31,7 +33,8 @@ function Services () {
                     conosco!"
                     imgSrc="/img/services/fretamentos.png"
                     buttonType="whiteBackground"
-                    buttonValue="Saiba Mais"                
+                    buttonValue="Saiba Mais"        
+                    buttonLink="#contact"                  
                 ></Service>
                 <Service
                     title="Outros Serviços"
@@ -40,7 +43,8 @@ function Services () {
                     serviços similares!"
                     imgSrc="/img/services/outrosServicos.png"
                     buttonType="whiteBackground"
-                    buttonValue="Saiba Mais"                
+                    buttonValue="Saiba Mais"    
+                    buttonLink="#contact"                        
                 ></Service>
             </div>
 
