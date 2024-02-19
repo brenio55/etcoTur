@@ -13,8 +13,8 @@ function App() {
         <div className="afterHeader"></div>
         <Banner></Banner>
         <Services></Services>
-        <Contact></Contact>
         <AboutUs></AboutUs>
+        <Contact></Contact>
       <Footer></Footer>
     </>
   )

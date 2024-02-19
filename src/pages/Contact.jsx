@@ -3,6 +3,7 @@ import Button from "../components/Button"
 function Contact () {
     return (
         <>
+            <img src="/img/services/montanhasServiços.png" alt="" className="montanhaServices"/>
             <section className="contact">
                 <h2>Contato</h2>
                 <div className="flex spaceAround central">

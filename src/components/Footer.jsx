@@ -1,6 +1,8 @@
 function Footer() {
     return (
         <>
+            <img className="footerTopWave" src="/img/topWaveFooter.png" alt="" />
+
             <footer>
                 <img src="img/logo.png" alt="logo" className="logo"/>
                 <div className="flex footerItems">

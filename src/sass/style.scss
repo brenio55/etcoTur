@@ -259,6 +259,11 @@ section.services{
         width: 100%;        
     }
 
+    .montanhaServicesFinal{
+        width: 100%;
+        margin-top: 30px;
+    }
+
     div.servicesDiv{
         display: flex;
         justify-content: space-evenly;
@@ -304,7 +309,7 @@ section.services{
         }
 
         button{
-            font-weight: 500;
+            font-weight: 600;
         }
     }
 
@@ -402,10 +407,11 @@ section.aboutUs{
     width: 100%;
     position: relative;
     text-align: center;
-    margin-top: -4px;
+    margin-top: -8px;
 
     .topWaveAboutUs{
         width: 100%;
+        margin-top: -1px;
     }
     h2{
         font-size: $h2Size;
@@ -511,11 +517,14 @@ section.aboutUs{
     button{
         margin-top: 20px;
         margin-bottom: 20px;
+        
     }
 
-    .montanhaAboutUsFinal{
-        width: 100%;
-    }
+    
+}
+
+.footerTopWave{
+    margin-top: -5px;
 }
 
 footer{
@@ -523,6 +532,7 @@ footer{
     position: relative;
     width: 100%;
     justify-content: space-around;
+    
 
     .footerItems{
         display: flex;

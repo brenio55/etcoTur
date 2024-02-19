@@ -230,6 +230,10 @@ section.services h2:nth-of-type(1) {
 section.services img.bordaSupServices {
   width: 100%;
 }
+section.services .montanhaServicesFinal {
+  width: 100%;
+  margin-top: 30px;
+}
 section.services div.servicesDiv {
   display: flex;
   justify-content: space-evenly;
@@ -269,7 +273,7 @@ section.services article.serviceComponent h5 {
   width: 230px;
 }
 section.services article.serviceComponent button {
-  font-weight: 500;
+  font-weight: 600;
 }
 section.services img.montanhaServices {
   margin-top: 9px;
@@ -353,10 +357,11 @@ section.aboutUs {
   width: 100%;
   position: relative;
   text-align: center;
-  margin-top: -4px;
+  margin-top: -8px;
 }
 section.aboutUs .topWaveAboutUs {
   width: 100%;
+  margin-top: -1px;
 }
 section.aboutUs h2 {
   font-size: 62px;
@@ -445,8 +450,9 @@ section.aboutUs button {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-section.aboutUs .montanhaAboutUsFinal {
-  width: 100%;
+
+.footerTopWave {
+  margin-top: -5px;
 }
 
 footer {
