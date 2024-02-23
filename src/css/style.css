@@ -131,6 +131,64 @@ header .logo {
   width: 100px;
   height: 100px;
 }
+@media (min-width: 320px) {
+  header .logo {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media (min-width: 1200px) {
+  header .logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 320px) {
+  header nav {
+    position: absolute;
+    top: 120px;
+    min-height: calc(100svh - 120px);
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -100%;
+    transition: all 1.2s;
+  }
+}
+@media (min-width: 1200px) {
+  header nav {
+    display: block;
+    position: static;
+    width: unset;
+    background-color: unset;
+    min-height: unset;
+  }
+}
+header nav.mostrar {
+  left: 0;
+  transition: all 1.2s;
+}
+header .menuIcon {
+  transition: all 0.2s;
+}
+@media (min-width: 320px) {
+  header .menuIcon {
+    display: block;
+    transform: scale(2.5);
+  }
+}
+@media (min-width: 1200px) {
+  header .menuIcon {
+    display: none;
+  }
+}
+header .menuIcon:hover {
+  cursor: pointer;
+  transform: scale(2.75);
+  transition: all 0.2s;
+}
 header ul {
   position: relative;
   display: flex;
@@ -141,6 +199,19 @@ header ul {
   padding: 10px;
   gap: 15px;
   font-weight: 600;
+}
+@media (min-width: 320px) {
+  header ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
 }
 header ul li {
   padding: 2px 5px;
