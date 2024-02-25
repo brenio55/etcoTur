@@ -8,6 +8,10 @@ function Header() {
         setMostrarMenu(!mostrarMenu);
     };
 
+    const fecharMenu = () => {
+        setMostrarMenu(false);
+    };
+
     return (
         <>
             <header>
@@ -29,7 +33,7 @@ function Header() {
                     />
                 </svg>
                 <nav className={`menu ${mostrarMenu ? 'mostrar' : ''}`}>
-                    <UlMenu></UlMenu>
+                    <UlMenu fecharMenu={fecharMenu} />
                 </nav>
             </header>
         </>
