@@ -233,6 +233,16 @@ header ul:after {
   bottom: -3px;
   position: absolute;
 }
+@media (min-width: 320px) {
+  header ul:after {
+    content: unset;
+  }
+}
+@media (min-width: 720px) {
+  header ul:after {
+    content: "";
+  }
+}
 
 .afterHeader {
   display: block;
@@ -248,6 +258,29 @@ section.banner {
   min-height: 100vh;
   position: relative;
 }
+@media (min-width: 320px) {
+  section.banner {
+    min-height: calc(100svh - 120px);
+  }
+}
+@media (min-width: 1200px) {
+  section.banner {
+    min-height: 100vh;
+  }
+}
+section.banner .sideLBanner {
+  display: block;
+}
+@media (min-width: 320px) {
+  section.banner .sideLBanner {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  section.banner .sideLBanner {
+    display: block;
+  }
+}
 section.banner::before {
   content: "";
   display: block;
@@ -261,6 +294,16 @@ section.banner::before {
   background-position: center;
   z-index: -1;
 }
+@media (min-width: 320px) {
+  section.banner::before {
+    height: calc(100svh - 120px);
+  }
+}
+@media (min-width: 1200px) {
+  section.banner::before {
+    height: 100vh;
+  }
+}
 section.banner::after {
   content: "";
   display: block;
@@ -272,6 +315,16 @@ section.banner::after {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
+}
+@media (min-width: 320px) {
+  section.banner::after {
+    height: calc(100svh - 120px);
+  }
+}
+@media (min-width: 1200px) {
+  section.banner::after {
+    height: 100vh;
+  }
 }
 section.banner .bordasAzuis {
   position: absolute;
@@ -291,6 +344,7 @@ section.banner .busCut {
 section.banner .flexBannerEtco {
   gap: 120px;
   align-items: center;
+  text-align: center;
 }
 section.banner .flexBannerEtco h1 {
   font-size: 75px;
@@ -305,6 +359,11 @@ section.banner .flexBannerEtco h2 {
   text-align: justify;
   width: 315px;
   margin-left: 4px;
+}
+@media (min-width: 320px) {
+  section.banner .flexBannerEtco h1, section.banner .flexBannerEtco h2 {
+    text-align: center;
+  }
 }
 section.banner .flexBannerEtco button {
   margin-left: 4px;
@@ -322,6 +381,18 @@ section.services h2:nth-of-type(1) {
   margin-top: -15px;
   margin-bottom: 70px;
 }
+@media (min-width: 320px) {
+  section.services h2:nth-of-type(1) {
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  section.services h2:nth-of-type(1) {
+    margin-top: -15px;
+    margin-bottom: 70px;
+  }
+}
 section.services img.bordaSupServices {
   width: 100%;
 }
@@ -333,6 +404,19 @@ section.services div.servicesDiv {
   display: flex;
   justify-content: space-evenly;
   position: relative;
+  align-items: center;
+}
+@media (min-width: 320px) {
+  section.services div.servicesDiv {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  section.services div.servicesDiv {
+    flex-direction: row;
+    gap: unset;
+  }
 }
 section.services div.servicesDiv::after {
   content: "";
@@ -369,6 +453,7 @@ section.services article.serviceComponent h5 {
 }
 section.services article.serviceComponent button {
   font-weight: 600;
+  width: 125px;
 }
 section.services img.montanhaServices {
   margin-top: 9px;
@@ -381,10 +466,24 @@ section.contact {
   background-size: 100%;
   min-height: 542px;
   background-repeat: no-repeat;
-  margin-top: -4px;
+  margin-top: -19px;
   color: white;
   text-align: center;
   padding-top: 75px;
+}
+@media (min-width: 320px) {
+  section.contact {
+    padding: 75px 15px 15px 15px;
+    background-size: 410%;
+    background-position: center;
+  }
+}
+@media (min-width: 720px) {
+  section.contact {
+    padding: 75px 0px 0px 0px;
+    background-size: 100%;
+    background-position: unset;
+  }
 }
 section.contact div.flex.central {
   margin-top: 25px;
@@ -398,6 +497,16 @@ section.contact .contactL {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+@media (min-width: 320px) {
+  section.contact .contactL {
+    display: none;
+  }
+}
+@media (min-width: 720px) {
+  section.contact .contactL {
+    display: flex;
+  }
 }
 section.contact .contactL h3 {
   width: 250px;
@@ -463,6 +572,20 @@ section.aboutUs h2 {
   margin-top: 15px;
   margin-bottom: 27px;
 }
+@media (min-width: 320px) {
+  section.aboutUs h2 {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  section.aboutUs h2 {
+    width: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
 section.aboutUs h3 {
   font-size: 25px;
 }
@@ -477,6 +600,20 @@ section.aboutUs .central {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+@media (min-width: 320px) {
+  section.aboutUs .central {
+    flex-direction: column;
+    gap: 40px;
+    padding: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  section.aboutUs .central {
+    flex-direction: row;
+    gap: unset;
+    padding: unset;
+  }
 }
 section.aboutUs .aboutUsL, section.aboutUs .aboutUsR {
   width: 500px;
@@ -525,6 +662,22 @@ section.aboutUs .flex.vantagens {
   justify-content: space-evenly;
   margin-bottom: 30px;
 }
+@media (min-width: 320px) {
+  section.aboutUs .flex.vantagens {
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  section.aboutUs .flex.vantagens {
+    flex-direction: row;
+    gap: unset;
+    text-align: unset;
+    align-items: unset;
+  }
+}
 section.aboutUs .flex.vantagens .vantagem h4:nth-of-type(1) {
   font-weight: 900;
 }
@@ -549,6 +702,16 @@ section.aboutUs button {
 .footerTopWave {
   margin-top: -5px;
 }
+@media (min-width: 320px) {
+  .footerTopWave {
+    display: none;
+  }
+}
+@media (min-width: 720px) {
+  .footerTopWave {
+    display: block;
+  }
+}
 
 footer {
   display: flex;
@@ -556,6 +719,20 @@ footer {
   width: 100%;
   justify-content: space-around;
   padding: 25px 0 45px 0;
+}
+@media (min-width: 320px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media (min-width: 720px) {
+  footer {
+    flex-direction: row;
+    align-items: unset;
+    gap: unset;
+  }
 }
 footer .UlMenu li {
   text-transform: lowercase;
@@ -565,6 +742,18 @@ footer .footerItems {
   flex-direction: row;
   gap: 45px;
   align-items: center;
+}
+@media (min-width: 320px) {
+  footer .footerItems {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (min-width: 720px) {
+  footer .footerItems {
+    flex-direction: row;
+    gap: 45px;
+  }
 }
 footer .footerItems h5 {
   font-weight: 700;
