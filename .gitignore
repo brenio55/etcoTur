@@ -23,3 +23,7 @@ dist-ssr
 *.sw?
 
 public\video\videoApresentacao.mp4
+public\video\videoApresentacao.mov
+
+dist/video/videoApresentacao.mov 
+dist/video/videoApresentacao.mp4 
