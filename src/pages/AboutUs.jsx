@@ -1,3 +1,6 @@
+import React from 'react';
+// import video from '/video/videoApresentacao.mp4';
+
 function AboutUs () {
     return (
         <>
@@ -45,8 +48,11 @@ function AboutUs () {
                 <a href="#contact"><button className="GreenBackground">Fale Conosco</button></a>
                 <br></br>
 
-                
-                
+                <div className="videoContainer">
+                    <video src='/video/videoApresentacao.mp4' autoPlay muted loop className="videoEtcoTur"></video>
+                </div>
+                    
+
             </section>
         </>
     )

@@ -31,14 +31,14 @@ function Contact() {
                     <div className="contactL">
                         <h3>Entre em contato conosco por meio do formulário de contato ao lado, ou por meio de alguma das nossas redes sociais!</h3>
                         <div className="flex redesSociais">
-                            <div className="redeSocialContact">
-                                <img src="/img/contact/whatsapp.png" alt="whatsapp icon" />
+                        <div className="redeSocialContact">
+                                <a href="https://wa.me/551938243222" target="_blank"><img src="/img/contact/whatsapp.png" alt="whatsapp icon" /></a>
                             </div>
                             <div className="redeSocialContact">
-                                <img src="/img/contact/instagram.png" alt="instagram icon" />
-                            </div>
+                                <a href="https://www.instagram.com/etcoturoficial/" target="_blank"><img src="/img/contact/instagram.png" alt="instagram icon" /></a>
+                            </div>   
                             <div className="redeSocialContact">
-                                <img src="/img/contact/linkedin.png" alt="linkedin icon" />
+                                <a href="https://www.linkedin.com/company/etco-tur/?originalSubdomain=br" target="_blank"><img src="/img/contact/linkedin.png" alt="linkedin icon" /></a>
                             </div>
                         </div>
                     </div>

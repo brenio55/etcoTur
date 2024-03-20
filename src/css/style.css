@@ -44,10 +44,21 @@ body, html {
 
 button {
   cursor: pointer;
+  transition: all 0.2s;
+}
+button:hover {
+  transform: scale(1.08);
+  transition: all 0.2s;
 }
 
 input[type=submit] {
   cursor: pointer;
+  transition: all 0.6s;
+}
+input[type=submit]:hover {
+  background-color: #C8FF1C;
+  color: black;
+  transition: all 0.6s;
 }
 
 #services, #aboutUs {
@@ -56,6 +67,14 @@ input[type=submit] {
 
 #contact {
   scroll-margin-top: 250px;
+}
+
+ul li {
+  transition: all 0.2s;
+}
+ul li:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
 }
 
 .buttonWhiteBackground {
@@ -124,6 +143,8 @@ header {
   justify-content: space-around;
   align-self: center;
   align-items: center;
+  -webkit-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
   z-index: 1000;
 }
@@ -471,6 +492,10 @@ section.contact {
   text-align: center;
   padding-top: 75px;
 }
+section.contact a {
+  all: unset;
+  height: 37px;
+}
 @media (min-width: 320px) {
   section.contact {
     padding: 75px 15px 15px 15px;
@@ -513,6 +538,7 @@ section.contact .contactL h3 {
   font-weight: 400;
 }
 section.contact .contactL div.redesSociais {
+  margin-top: 20px;
   justify-content: space-around;
   text-align: center;
 }
@@ -520,9 +546,7 @@ section.contact .contactL div.redesSociais .redeSocialContact {
   display: flex;
   justify-content: center;
   background-color: rgba(86, 162, 213, 0.2);
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 9px;
   border-radius: 18px;
@@ -562,6 +586,7 @@ section.aboutUs {
   position: relative;
   text-align: center;
   margin-top: -8px;
+  overflow-x: hidden; /* esconder before caminhonetes width */
 }
 section.aboutUs .topWaveAboutUs {
   width: 100%;
@@ -589,11 +614,29 @@ section.aboutUs h2 {
 section.aboutUs h3 {
   font-size: 25px;
 }
+section.aboutUs video {
+  width: 800px;
+  border-radius: 5px;
+}
+@media (min-width: 320px) {
+  section.aboutUs video {
+    width: 300px;
+  }
+}
+@media (min-width: 600px) {
+  section.aboutUs video {
+    width: 500px;
+  }
+}
+@media (min-width: 1000px) {
+  section.aboutUs video {
+    width: 800px;
+  }
+}
 section.aboutUs .central {
   align-items: center;
   margin-top: 60px;
   margin-bottom: 60px;
-  height: -moz-fit-content;
   height: fit-content;
   width: auto;
   background-image: url("/img/aboutUs/lineBehind.png");
@@ -620,9 +663,7 @@ section.aboutUs .aboutUsL, section.aboutUs .aboutUsR {
 }
 section.aboutUs .aboutUsL {
   position: relative;
-  min-width: -moz-fit-content;
   min-width: fit-content;
-  min-height: -moz-fit-content;
   min-height: fit-content;
 }
 section.aboutUs .aboutUsL:before {
@@ -790,3 +831,12 @@ footer .logo {
   width: 100px;
   height: 100px;
 }
+
+.redeSocialContact {
+  transition: all 0.2s;
+}
+.redeSocialContact:hover {
+  transform: scale(1.08);
+  transition: all 0.2s;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

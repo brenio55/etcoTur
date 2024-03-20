@@ -27,10 +27,10 @@ function Footer() {
                             <div className="redeSocialContact footer">
                                 <a href="https://wa.me/551938243222" target="_blank"><img src="/img/contact/whatsapp.png" alt="whatsapp icon" /></a>
                             </div>
-                            <div className="redeSocialContact">
+                            <div className="redeSocialContact footer">
                                 <a href="https://www.linkedin.com/company/etco-tur/?originalSubdomain=br" target="_blank"><img src="/img/contact/linkedin.png" alt="linkedin icon" /></a>
                             </div>
-                            <div className="redeSocialContact">
+                            <div className="redeSocialContact footer">
                                 <a href="https://www.instagram.com/etcoturoficial/" target="_blank"><img src="/img/contact/instagram.png" alt="instagram icon" /></a>
                             </div>                            
                         </div>
