@@ -20,7 +20,13 @@ function AboutUs () {
 
                         <br></br>
 
-                        <p>A história toma um rumo em 2003, no Dia de Nossa Senhora das Graças, quando Sr. Paulo e Enio Pirani, pai e filho, decidem adquirir metade dessa pequena empresa com a esperança de tornarem-se motoristas e explorarem o mundo das excursões.</p>
+                        <p>A história começa em 2003, no Dia de Nossa Senhora das Graças, quando Sr. Paulo e Enio Pirani, pai e filho, decidem adquirir uma pequena empresa, com apenas dois ônibus, na esperança de explorar o mundo das excursões.
+                        </p>
+
+                        <br></br>
+
+                        <p>Após conseguir estabilizar e perceber que aqueles dois ônibus poderiam se tornar algo maior, abandonaram tudo e focaram suas forças para fazer a Etco Tur prosperar.
+                        Foi a partir daí que novos carros começaram a serem comprados e a empresa ano a ano foi se solidificando no mercado e se tornando referência na região. Hoje são mais de 12 cidades com garagem e mais de 150 veículos próprios.</p>
                     </div>
                 </div>
 
@@ -33,13 +39,13 @@ function AboutUs () {
                     </div>
 
                     <div className="vantagem">
-                        <h4>130+</h4>
+                        <h4>150+</h4>
                         <h4>veículos próprios</h4>
                         <p>Uma larga gama de veículos em garagem para sua maior necessidade</p>
                     </div>
 
                     <div className="vantagem">
-                        <h4>1997</h4>
+                        <h4>2003</h4>
                         <h4>Fundada desde</h4>
                         <p>Experientes na área, temos a melhor solução para te dar com base em nossa própria carreira</p>
                     </div>
