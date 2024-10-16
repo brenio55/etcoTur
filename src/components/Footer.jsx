@@ -45,7 +45,7 @@ function Footer() {
                     transform: "translateX(-50%)",
                     marginBottom: "5px",
                     fontSize: "13px"
-                    }}><a href="https://www.instagram.com/divsec.dev/" target="_blank">Desenvolvido por &lt;DiVSeC&gt; </a></p>
+                    }}><a href="https://divsec.cloud" target="_blank">Desenvolvido por &lt;DiVSeC&gt; </a></p>
             </footer>
         </>
     )
