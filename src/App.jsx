@@ -12,9 +12,12 @@ import 'aos/dist/aos.css'
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
-      once: true,
-      easing: 'ease-in-out'
+      duration: 600,
+      easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+      once: false,
+      mirror: true,
+      offset: 120,
+      delay: 0,
     });
   }, []);
 

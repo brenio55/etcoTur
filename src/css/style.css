@@ -5,6 +5,12 @@
   scroll-behavior: smooth;
 }
 
+/* Add smooth transition for all animated elements */
+[data-aos] {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 600ms !important; /* Make animations faster */
+}
+
 a {
   text-decoration: none;
   color: unset;
