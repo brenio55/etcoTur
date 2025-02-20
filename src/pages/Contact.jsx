@@ -24,25 +24,39 @@ function Contact() {
 
     return (
         <>
-            <img src="/img/services/montanhasServiços.png" alt="" className="montanhaServices" />
+            <img 
+                src="/img/services/montanhasServiços.png" 
+                alt="" 
+                className="montanhaServices"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+            />
             <section className="contact" id="contact">
-                <h2>Contato</h2>
+                <h2 data-aos="fade-up" data-aos-delay="100">Contato</h2>
+
                 <div className="flex spaceAround central">
-                    <div className="contactL">
+                    <div className="contactL" data-aos="fade-right" data-aos-delay="200">
                         <h3>Entre em contato conosco por meio do formulário de contato ao lado, ou por meio de alguma das nossas redes sociais!</h3>
                         <div className="flex redesSociais">
-                        <div className="redeSocialContact">
-                                <a href="https://wa.me/551938243222" target="_blank"><img src="/img/contact/whatsapp.png" alt="whatsapp icon" /></a>
+                            <div className="redeSocialContact">
+                                <a href="https://wa.me/551938243222" target="_blank">
+                                    <img src="/img/contact/whatsapp.png" alt="whatsapp icon" />
+                                </a>
                             </div>
                             <div className="redeSocialContact">
-                                <a href="https://www.instagram.com/etcoturoficial/" target="_blank"><img src="/img/contact/instagram.png" alt="instagram icon" /></a>
+                                <a href="https://www.instagram.com/etcoturoficial/" target="_blank">
+                                    <img src="/img/contact/instagram.png" alt="instagram icon" />
+                                </a>
                             </div>   
                             <div className="redeSocialContact">
-                                <a href="https://www.linkedin.com/company/etco-tur/?originalSubdomain=br" target="_blank"><img src="/img/contact/linkedin.png" alt="linkedin icon" /></a>
+                                <a href="https://www.linkedin.com/company/etco-tur/?originalSubdomain=br" target="_blank">
+                                    <img src="/img/contact/linkedin.png" alt="linkedin icon" />
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div className="contactR">
+
+                    <div className="contactR" data-aos="fade-left" data-aos-delay="300">
                         <form onSubmit={send}>
                             <input type="text" name="nome" id="nome" placeholder="Nome" />
 
