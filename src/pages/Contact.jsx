@@ -40,17 +40,17 @@ function Contact() {
                         <div className="flex redesSociais">
                             <div className="redeSocialContact">
                                 <a href="https://wa.me/551938243222" target="_blank">
-                                    <img src="/img/contact/whatsapp.png" alt="whatsapp icon" />
+                                    <img src="/img/contacts/whatsapp.png" alt="whatsapp icon" />
                                 </a>
                             </div>
                             <div className="redeSocialContact">
                                 <a href="https://www.instagram.com/etcoturoficial/" target="_blank">
-                                    <img src="/img/contact/instagram.png" alt="instagram icon" />
+                                    <img src="/img/contacts/instagram.png" alt="instagram icon" />
                                 </a>
                             </div>   
                             <div className="redeSocialContact">
                                 <a href="https://www.linkedin.com/company/etco-tur/?originalSubdomain=br" target="_blank">
-                                    <img src="/img/contact/linkedin.png" alt="linkedin icon" />
+                                    <img src="/img/contacts/linkedin.png" alt="linkedin icon" />
                                 </a>
                             </div>
                         </div>
