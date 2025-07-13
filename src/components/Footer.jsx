@@ -5,7 +5,7 @@ function Footer() {
         <>
             <img className="footerTopWave" src="/img/topWaveFooter.png" alt="" />
 
-            <footer data-aos="fade-up" data-aos-offset="200">
+            <footer>
                 <a href="#banner"><img src="img/logo.png" alt="logo" className="logo"/></a>
                 <div className="flex footerItems">
                     <div className="flex menuFooter">

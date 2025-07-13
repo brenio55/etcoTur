@@ -5,12 +5,6 @@
   scroll-behavior: smooth;
 }
 
-/* Add smooth transition for all animated elements */
-[data-aos] {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 600ms !important; /* Make animations faster */
-}
-
 a {
   text-decoration: none;
   color: unset;
@@ -22,7 +16,7 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 img {
@@ -43,15 +37,9 @@ img {
   flex-direction: column;
 }
 
-html {
+body, html {
   margin: 0;
-  /* Removed fixed height to allow content to expand */
-}
-
-body {
-  margin: 0;
-  min-height: 100vh; /* Use min-height to permit expansion with content */
-  overflow-x: hidden;  /* Maintain overflow hidden on body */
+  height: 100%;
 }
 
 button {
@@ -155,10 +143,9 @@ header {
   justify-content: space-around;
   align-self: center;
   align-items: center;
-  -webkit-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
   z-index: 1000;
+  top: 0;
 }
 header .logo {
   width: 100px;
@@ -558,7 +545,9 @@ section.contact .contactL div.redesSociais .redeSocialContact {
   display: flex;
   justify-content: center;
   background-color: rgba(86, 162, 213, 0.2);
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 9px;
   border-radius: 18px;
@@ -598,7 +587,8 @@ section.aboutUs {
   position: relative;
   text-align: center;
   margin-top: -8px;
-  overflow: hidden; /* esconder before caminhonetes width */
+  overflow-x: hidden; /* esconder before caminhonetes width */
+  overflow-y: hidden;
 }
 section.aboutUs .topWaveAboutUs {
   width: 100%;
@@ -649,6 +639,7 @@ section.aboutUs .central {
   align-items: center;
   margin-top: 60px;
   margin-bottom: 60px;
+  height: -moz-fit-content;
   height: fit-content;
   width: auto;
   background-image: url("/img/aboutUs/lineBehind.png");
@@ -675,7 +666,9 @@ section.aboutUs .aboutUsL, section.aboutUs .aboutUsR {
 }
 section.aboutUs .aboutUsL {
   position: relative;
+  min-width: -moz-fit-content;
   min-width: fit-content;
+  min-height: -moz-fit-content;
   min-height: fit-content;
 }
 section.aboutUs .aboutUsL:before {
